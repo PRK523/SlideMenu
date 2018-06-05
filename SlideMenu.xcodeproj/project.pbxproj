@@ -15,6 +15,7 @@
 		6B01132920B74613002E44FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B01132720B74613002E44FD /* LaunchScreen.storyboard */; };
 		6B01133420B74614002E44FD /* SlideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01133320B74614002E44FD /* SlideMenuTests.swift */; };
 		6B01133F20B74614002E44FD /* SlideMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01133E20B74614002E44FD /* SlideMenuUITests.swift */; };
+		6B01134D20B74AFB002E44FD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01134C20B74AFB002E44FD /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6B01133A20B74614002E44FD /* SlideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B01133E20B74614002E44FD /* SlideMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuUITests.swift; sourceTree = "<group>"; };
 		6B01134020B74614002E44FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B01134C20B74AFB002E44FD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6B01132720B74613002E44FD /* LaunchScreen.storyboard */,
 				6B01132A20B74613002E44FD /* Info.plist */,
 				6B01132220B74613002E44FD /* SlideMenu.xcdatamodeld */,
+				6B01134C20B74AFB002E44FD /* MenuViewController.swift */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				6B01131E20B74613002E44FD /* ViewController.swift in Sources */,
 				6B01131C20B74613002E44FD /* AppDelegate.swift in Sources */,
 				6B01132420B74613002E44FD /* SlideMenu.xcdatamodeld in Sources */,
+				6B01134D20B74AFB002E44FD /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

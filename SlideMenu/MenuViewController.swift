@@ -8,28 +8,33 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var menu_tableView: UITableView!
+    
+    let title_arr = ["Home", "Settings", "Privacy", "Contact Us"]
+    
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return title_arr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = menu_tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.tag = indexPath.row
+        cell.textLabel?.text = title_arr[indexPath.row]
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        menu_tableView.delegate = self
+        menu_tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
